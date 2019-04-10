@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--
+    Name: Chris Allen
+    Date Created: 2/19/2019
+    Most Recent Version: 2/19/2019
+-->
+<html lang="en">
+
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/restaurantStyles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <noscript onload="noScript()"></noscript>
+    <script src="javascript/restaurantScript.js"></script>
+    <style>
+
+        #form {
+            width: 96%;
+            margin: 2% auto;
+            text-align: center;
+            border: 5px solid #FA2742;
+            padding: 10px 0;
+            background-color: #E8EAE3;
+            color: #373833;
+            font-size: 1.2em;
+        }
+
+        select:hover {
+            cursor: pointer;
+        }
+
+        .form1 label, .form2 label {
+            font-weight: bold;
+        }
+
+        .form2 input:hover {
+            cursor: pointer;
+        }
+
+        .button {
+            background-color: #FA2742;
+            color: #E8EAE3;
+            border: 1px solid #FA2742;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="content">
+
+        <header class="jumbotron">
+            <h1 class="font-bold text-left mt-5">Cold Cuts</h1>
+            <h4 class="font-italic text-left mb-5">"Our sandwiches are just a hair better."</h4>
+        </header>
+
+        <nav class="navbar navbar-light">
+            <form>
+                <button class="btn" type="button"><a href="index.html"><i class="fas fa-home"></i></a></button>
+                <button class="btn" type="button"><a href="menu.html">Menu</a></button>
+                <button class="btn" type="button"><a href="contact.html">Contact Us</a></button>
+            </form>
+        </nav>
+
+        <div class="center-form form-row align-items-center">
+            <form id="form" action="fakePage.html" method="POST">
+                <div class="form1">
+                    <label class="col-auto">Name:</label>
+                    <input id="nameRequired" class="col-auto" type="text" name="name"/><br />
+                    <label class="col-auto">Email:</label>
+                    <input id="emailRequired" class="col-auto" type="email" name="email"/><br />
+                    <label class="col-auto">Phone:</label>
+                    <input id="phoneRequired" class="col-auto" type="number" name="phone" /><br />
+                    <label class="col-auto">Reason for Inquiry</label>
+
+                    <select class="col-auto" name="Inquiry">
+                        <option value="Catering">Catering</option>
+                        <option value="Private Party">Private Party</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                    </select><br />
+                </div>
+                <div class="form2">
+                    <label>Additional Information</label><br />
+                    <textarea name="additionalInfo"></textarea><br />
+
+                    <label>Have you been to the restaurant?</label>
+                    <input type="radio" name="answer" value="NO" checked />
+                    <lable>No</lable>
+                    <input type="radio" name="answer" value="YES" />
+                    <lable>Yes</lable><br />
+
+                    <label>Best days to contact you:</label>
+                    <input type="checkbox" name="Weekdays" value="Monday" />
+                    <label>M</label>
+                    <input type="checkbox" name="Weekdays" value="Tuesday" />
+                    <label>T</label>
+                    <input type="checkbox" name="Weekdays" value="Wednesday" />
+                    <label>W</label>
+                    <input type="checkbox" name="Weekdays" value="Thursday" />
+                    <label>Th</label>
+                    <input type="checkbox" name="Weekdays" value="Friday" />
+                    <label>F</label><br />
+
+                    <input class="button" onclick="validateForm()" type="button" value="Send Request" />
+                </div>
+                <div class="clear-float"></div>
+            </form>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="page-footer font-small blue pt-4">
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+
+                        <!-- Content -->
+                        <h5 class="text-uppercase">Footer Content</h5>
+                        <p>Here you can use rows and columns here to organize your footer content.</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Address</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>205 Mullets and Meats Way </br> Manly, Iowa 50456</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <!-- Links -->
+                        <h5 class="text-uppercase">Phone #</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>(555) 555-5555</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+        </footer>
+        <!-- Footer -->
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
