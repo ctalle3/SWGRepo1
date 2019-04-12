@@ -1,5 +1,5 @@
 ﻿body {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -58,8 +58,8 @@ a:active {
 footer {
     background-color: #E8EAE3;
     color: #373833;
+    margin-bottom: 5px 0;
     padding-bottom: 2%;
-    margin: auto;
 }
 .jumbotron {
     background-image: url("../images/coldcuts.jpg");
@@ -84,4 +84,8 @@ header h5 {
     font-size: 30px;
     font-family: 'Anton', sans-serif;
     text-shadow: 2px 2px #373833;
+}
+
+.text-uppercase {
+    color: #FA2742;
 }
