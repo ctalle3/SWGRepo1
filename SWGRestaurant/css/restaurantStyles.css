@@ -21,10 +21,12 @@ nav {
     background-color: #FA2742;
     color: #E8EAE3;
 }
+
 .btn:visited {
   background-color: yellow;
   color: hotpink;
 }
+
 .btn:hover {
     background-color: #373833;
     border: 1px solid #FA2742; 
@@ -38,6 +40,7 @@ a:link {
     text-decoration: none;
     color: none;
 }
+
 a:visited {
     color: #373833;
 }
@@ -47,6 +50,7 @@ a:hover {
     text-decoration: none;
     color: #E8EAE3;
 }
+
 a:active {
     color: #FA2742;
 }
@@ -55,12 +59,7 @@ a:active {
     width: 600px;
     height: 400px;
 }
-footer {
-    background-color: #E8EAE3;
-    color: #373833;
-    margin-bottom: 5px 0;
-    padding-bottom: 2%;
-}
+
 .jumbotron {
     background-image: url("../images/coldcuts.jpg");
     background-repeat: no-repeat;
@@ -70,20 +69,30 @@ footer {
 header {
     color: ghostwhite;
 }
+
 header h1 {
     font-size: 75px;
     font-family: 'Anton', sans-serif;
     text-shadow: 2px 2px #373833;
 }
+
 header h4 {
     font-size: 50px;
     font-family: 'Anton', sans-serif;
     text-shadow: 2px 2px #373833;
 }
+
 header h5 {
     font-size: 30px;
     font-family: 'Anton', sans-serif;
     text-shadow: 2px 2px #373833;
+}
+
+footer {
+    background-color: #E8EAE3;
+    color: #373833;
+    margin-bottom: 5px 0;
+    padding-bottom: 2%;
 }
 
 .text-uppercase {
