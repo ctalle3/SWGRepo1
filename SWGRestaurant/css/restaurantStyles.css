@@ -55,16 +55,16 @@ a:active {
     color: #FA2742;
 }
 
-.carousel {
-    width: 600px;
-    height: 400px;
-}
-
 .jumbotron {
     background-image: url("../images/coldcuts.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}   
+}
+
+.carousel {
+    width: 600px;
+    height: 400px;
+}
 
 header {
     color: ghostwhite;
